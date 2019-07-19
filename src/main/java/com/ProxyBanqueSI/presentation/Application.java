@@ -21,7 +21,7 @@ public class Application {
    
 		// debut boucle 
 
-		while(valider.equals("oui")) {
+		
 	
 			System.out.println("=================Menu Principal=================");
 			System.out.println("1- Gestion de client");
@@ -50,7 +50,7 @@ public class Application {
 						  case 1:
 							  System.out.println("Ajouter un client");
 							  
-							   // serviceclient.addClient(client);
+							    serviceclient.addClient(Conseiller);;
 							    break;
 						  case 2:
 							  System.out.println("modifier un client");
@@ -62,7 +62,9 @@ public class Application {
 							    break; 
 						  case 4:
 						///		    serviceclient.viewClient(client);
-								    break;
+								 break;
+						  default :
+								System.out.println("Vous avais choisi un type de traitement inexistant");
 			  
 						  }
 	    break;
@@ -76,6 +78,9 @@ public class Application {
 								  case 1:
 									    //serviceclient.addClient(client);
 									    break;
+								default :
+									System.out.println("Vous avais choisi un type de traitement inexistant");
+								
 								  }
 	    break;
 	  case 3:
@@ -95,15 +100,14 @@ public class Application {
 					  case 2:
 						    //serviceclient.addClient(client);
 						    break;
+					  default :
+							System.out.println("Vous avais choisi un type de traitement inexistant");
 					  }
-		    break;
+		                    break;
+					  default :
+		                	System.out.println("Vous avais choisi un type de traitement inexistant");
 	  
 	}
-
-	System.out.println("vous voulez continuer ?oui/non");
-	valider=s.next();
-	
-}
 
 		}
 	}

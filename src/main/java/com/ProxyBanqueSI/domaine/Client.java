@@ -11,13 +11,14 @@ public class Client {
 		private String adresse;
 		private int code_postal;
 		private String ville;
-		private int num_tel;
+		private String num_tel;
 		private TypeClient type;
 		
 	// Declaration enumeration	
 		public enum TypeClient {
 			  PARTICULIER,
-			  ENTREPRISE
+			  ENTREPRISE;
+			 
 			}
 		
 	// Getters and Setters
@@ -69,11 +70,11 @@ public class Client {
 			this.ville = ville;
 		}
 
-		public int getNum_tel() {
+		public String getNum_tel() {
 			return num_tel;
 		}
 
-		public void setNum_tel(int num_tel) {
+		public void setNum_tel(String num_tel) {
 			this.num_tel = num_tel;
 		}
 
@@ -91,7 +92,7 @@ public class Client {
 	
 	// constructors
 
-		public Client(int id, String nom, String prenom, String adresse, int code_postal, String ville, int num_tel,
+		public Client( String nom, String prenom, String adresse, int code_postal, String ville, String num_tel,
 				TypeClient type) {
 			super();
 			this.id = count.incrementAndGet();
